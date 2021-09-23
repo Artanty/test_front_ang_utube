@@ -1,0 +1,10 @@
+div{
+  display: flex;
+  flex-direction: column;
+}
+span{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ebeeff;
+  cursor: pointer;
+}

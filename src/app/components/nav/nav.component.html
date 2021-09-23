@@ -1,0 +1,21 @@
+<div>
+  <span class="material-icons"
+      (click)="back()" title="Назад">
+      arrow_back
+  </span>
+  <span
+      *ngIf="currentComponent !== 'search'"
+      class="material-icons" (click)="goToSearch()" title="Перейти к поиску">
+      search
+  </span>
+  <span
+      *ngIf="currentComponent == 'comments'"
+      class="material-icons" (click)="goToVideo()" title="Перейти к видео">
+      play_circle_filled
+  </span>
+  <span *ngIf="currentComponent == 'video'"
+      class="material-icons" (click)="goToComments()" title="Перейти к комментариям">
+      comment
+  </span>
+
+</div>
