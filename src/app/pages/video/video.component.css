@@ -1,0 +1,68 @@
+.wrapper{
+  background: #fc00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+}
+.container{
+  max-width: 510px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.material-icons{
+  cursor:pointer;
+}
+.bg{
+  background: #ebefff;
+}
+.card{
+  background: #ffffff;
+  margin: 13px;
+  border-radius: 4px;
+  padding: 15px;
+  display: inline-block;
+}
+h1{
+  margin: 0;
+  font-size: 35px;
+  font-family: 'Bebas Neue', cursive;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.tagsWrapperUl{
+  list-style-type: none;
+  padding-left: 0;
+}
+.tagsWrapperUl li{
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  margin-right: 6px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  padding: 4px 10px;
+  margin: 2px 3px 2px 0;
+  font-size: 14px;
+}
+
+.nav{
+  position: fixed;
+  left: calc(50% - 293px);
+  top: 34px;
+}
+.flexWrapHor{
+  display: flex;
+  align-items: center;
+  color: #656262;
+}
+.flexWrapHor > .flexWrapHor > span:nth-child(1){
+  margin-right: 10px;
+}
+.flexWrapHor > .flexWrapHor > span:nth-child(2){
+  margin-right: 40px;
+}
+

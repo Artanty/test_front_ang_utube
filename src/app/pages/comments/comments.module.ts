@@ -3,13 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { CommentsRoutingModule } from './comments-routing.module';
 import { CommentsComponent } from './comments.component';
+import { SharedModule } from './../../components/nav/shared.module';
+
 
 
 @NgModule({
-  declarations: [CommentsComponent],
+  declarations: [
+    CommentsComponent,
+  ],
   imports: [
     CommonModule,
-    CommentsRoutingModule
+    CommentsRoutingModule,
+    SharedModule
   ]
 })
 export class CommentsModule { }

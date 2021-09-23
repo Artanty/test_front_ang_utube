@@ -1,1 +1,40 @@
-<p>comments works!</p>
+<div class="wrapper">
+  <div class="container">
+
+    <div class="row bg no-gutters">
+      <div class="col-md-12">
+        <div *ngIf="error" class="error">
+          {{ error }}
+        </div>
+        <div *ngFor="let comment of comments" class="card">
+          <div class="flexWrapHor">
+            <div class="avaWrap">
+              <img [src]="comment.snippet.topLevelComment.snippet.authorProfileImageUrl" alt="">
+            </div>
+            <div class="flexWrapVert">
+              <div>
+                <b>{{ comment.snippet.topLevelComment.snippet.authorDisplayName }}</b>
+                <span class="date">{{ comment.publishedAt }}</span>
+              </div>
+
+              <p>{{ comment.snippet.topLevelComment.snippet.textDisplay }}</p>
+
+              <div class="likes">
+                <span class="material-icons">thumb_up_alt</span>
+                <span *ngIf="comment.likes">{{ comment.likes}}</span>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="nav">
+      <app-nav [currentComponent]="'comments'" [currentId]="id"></app-nav>
+    </div>
+  </div>
+
+</div>

@@ -1,1 +1,54 @@
-<p>video works!</p>
+<div class="wrapper">
+<div class="container">
+  <div class="row bg no-gutters">
+    <div class="col-12">
+      <ng-container *ngIf="ready">
+        <iframe [src]='safeURL' frameborder="0" allowfullscreen
+                width="480" height="270" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </ng-container>
+    </div>
+  </div>
+  <ng-container *ngIf="ready">
+    <div class="row bg no-gutters">
+    <div class="col-md-12">
+      <div class="card">
+        <h1>{{ video.snippet.title}}</h1>
+        <div class="flexWrapHor mt-2 mb-2">
+          <div class="flexWrapHor">
+            <span class="material-icons">
+              visibility
+            </span>
+            <span>{{ video.statistics.viewCount}}</span>
+          </div>
+          <div class="flexWrapHor sub">
+            <span class="material-icons">
+              thumb_up
+            </span>
+            <span>{{ video.statistics.likeCount}}</span>
+          </div>
+          <div class="flexWrapHor">
+            <span class="material-icons">
+              thumb_down
+            </span>
+            <span>{{ video.statistics.dislikeCount}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>{{ video.snippet.description}}</h2>
+      </div>
+      <div class="card">
+        <ul class="tagsWrapperUl">
+          <li *ngFor="let item of video.snippet.tags">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </ng-container>
+  <div class="nav">
+    <app-nav [currentComponent]="'video'" [currentId]="id"></app-nav>
+  </div>
+</div>
+
+</div>

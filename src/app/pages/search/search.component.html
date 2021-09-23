@@ -1,1 +1,45 @@
-<p>search works!</p>
+<div class="bg">
+  <div class="searchContainer">
+    <input #searchInput type="text" placeholder="Search..." >
+    <div class="search"></div>
+  </div>
+  <div class="loading" *ngIf="isSearching">
+    <span class="material-icons">
+    hourglass_empty
+    </span>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow vh-50">
+
+          <a [routerLink]="['/video/'+ video.id.videoId]">
+            <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="...">
+          </a>
+
+
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">
+                {{video.snippet.title}}
+              </a>
+            </h5>
+            <div class="card-text text-black-50">{{video.snippet.description.slice(0, 100)}}</div>
+            <a [routerLink]="['/video/'+ video.id.videoId]">
+            <span
+              class="material-icons" title="Перейти к видео">
+              play_circle_filled
+            </span>
+            </a>
+            <a [routerLink]="['/comments/'+ video.id.videoId]">
+            <span
+              class="material-icons" title="Перейти к комментариям">
+              comment
+            </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

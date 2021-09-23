@@ -1,0 +1,65 @@
+.wrapper{
+  background: #fc00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+}
+.container{
+  max-width: 510px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.material-icons{
+  cursor:pointer;
+}
+.bg{
+  background: #ebefff;
+  min-height: 100vh;
+}
+.card{
+  background: #ffffff;
+  margin: 13px;
+  border-radius: 4px;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.flexWrapHor{
+  display: flex;
+}
+.flexWrapVert{
+  display: flex;
+  flex-direction:column;
+}
+.avaWrap{
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: grey;
+  margin-right: 16px;
+  overflow: hidden;
+}
+b{
+  margin-top: 0;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.date{
+  font-size: 14px;
+  color: grey;
+}
+.likes{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.likes>span:nth-child(1){
+  color:#9c9c9c;
+  margin-right: 6px;
+}
+.nav{
+  position: fixed;
+  left: calc(50% - 293px);
+  top: 34px;
+}
+
