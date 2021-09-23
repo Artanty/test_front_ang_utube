@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import {YoutubeService} from "../../services/youtube.service";
+import {YoutubeService} from "@services/youtube.service";
 import {fromEvent} from 'rxjs';
 import {debounceTime,  map,  distinctUntilChanged, filter} from 'rxjs/operators';
 

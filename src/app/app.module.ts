@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './components/nav/shared.module';
+import { SharedModule } from '@components/nav/shared.module';
 
 @NgModule({
   declarations: [

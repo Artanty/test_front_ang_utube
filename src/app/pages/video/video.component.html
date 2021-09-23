@@ -38,11 +38,13 @@
       <div class="card">
         <h2>{{ video.snippet.description}}</h2>
       </div>
+      <ng-container *ngIf="video.snippet.tags">
       <div class="card">
         <ul class="tagsWrapperUl">
           <li *ngFor="let item of video.snippet.tags">{{ item }}</li>
         </ul>
       </div>
+      </ng-container>
     </div>
   </div>
   </ng-container>

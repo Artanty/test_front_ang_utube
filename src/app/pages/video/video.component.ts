@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {YoutubeService} from "../../services/youtube.service";
+import {YoutubeService} from "@services/youtube.service";
 
 import {map, skipWhile} from 'rxjs/operators';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';

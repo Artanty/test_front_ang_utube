@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DomSanitizer} from "@angular/platform-browser";
 import {ActivatedRoute,Router} from "@angular/router";
-import {YoutubeService} from "../../services/youtube.service";
+import {YoutubeService} from "@services/youtube.service";
 import {Location} from "@angular/common";
 import {skipWhile, map} from "rxjs/operators";
 import {format, parseISO} from 'date-fns';

@@ -25,9 +25,6 @@ export class YoutubeService {
   getVideo (id: string): Observable <any> {
     const url = `${this.getOneUrl}?key=${this.apiKey}&part=player,snippet,statistics&id=${id}`
     return this.http.get(url)
-      // .pipe(
-      //   map((response: any) => response.items)
-      // );
   }
 
   getComments (videoId) {

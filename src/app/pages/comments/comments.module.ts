@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CommentsRoutingModule } from './comments-routing.module';
 import { CommentsComponent } from './comments.component';
-import { SharedModule } from './../../components/nav/shared.module';
+import { SharedModule } from '@components/nav/shared.module';
 
 
 
