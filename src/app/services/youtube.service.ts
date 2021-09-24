@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class YoutubeService {
+  apiKey = environment.apiKey;
   apiUrl = 'https://www.googleapis.com/youtube/v3/search'
-  apiKey = 'AIzaSyC80lc_9Bca-FQsq-Xl30GxveHNkYKgOLA'
   getOneUrl = 'https://www.googleapis.com/youtube/v3/videos'
   getCommentsUrl = 'https://www.googleapis.com/youtube/v3/commentThreads'
 
