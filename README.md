@@ -1,4 +1,8 @@
-# Utube
+# Выполнение тестового задания. Создание Utube-клиента, в котором:
+- Страница с поиском видео и выдачей результатов;
+- Страница с открытым видео;
+- Страница с комментариями этого видео;
+- Использовать Lazy-load modules
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
